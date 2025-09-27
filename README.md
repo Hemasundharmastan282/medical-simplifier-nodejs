@@ -20,9 +20,11 @@ This application creates a three-step pipeline to transform raw text into concis
 | **Robust Validation** | Uses **Zod** schema coercion and validation to ensure the LLM's output meets all structural requirements before processing. | Zod | 
 | **Secure Setup** | Configures the service using ES Modules (E SM) and secures credentials via `.env` file and `.gitignore`. | Node.js, `dotenv` | 
 
-##  Project Structure
+### 📂 Project Structure
 
-Your project is structured for clear separation of concerns:
+Your project is organized using a service-oriented architecture for clarity and maintainability:
+
+```bash
 medical-simplifier-nodejs/
 ├── src/
 │   ├── data/                 # Stores static data (e.g., refRanges.json)
