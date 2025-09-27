@@ -35,6 +35,8 @@ medical-simplifier-nodejs/
 ├── index.js                  # Main Express server and API route definitions
 ├── package.json              # Project dependencies and metadata
 └── README.md                 # This file
+
+```
 ##  Setup & Installation
 
 ### 1. Prerequisites
