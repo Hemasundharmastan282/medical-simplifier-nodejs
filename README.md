@@ -1,16 +1,16 @@
-# 🩺 Medical Report Simplifier (Node.js/Express)
+#  Medical Report Simplifier (Node.js/Express)
 
 An **AI-powered backend service** designed to streamline the analysis of raw medical lab reports. This application simplifies complex data into patient-friendly summaries using high-speed Large Language Models (LLMs).
 
-## 💡 The Problem
+##  The Problem
 
 Raw medical lab reports are often complex, filled with specialized terminology, abbreviations, and reference ranges, making them difficult for patients to understand without a healthcare professional.
 
-## ✨ The Solution
+##  The Solution
 
 This application creates a three-step pipeline to transform raw text into concise, understandable feedback using the Groq API's speed and reliability for structured data tasks.
 
-## 🌟 Key Features
+##  Key Features
 
 | Feature | Description | Technology | 
 | :--- | :--- | :--- | 
@@ -20,7 +20,7 @@ This application creates a three-step pipeline to transform raw text into concis
 | **Robust Validation** | Uses **Zod** schema coercion and validation to ensure the LLM's output meets all structural requirements before processing. | Zod | 
 | **Secure Setup** | Configures the service using ES Modules (E SM) and secures credentials via `.env` file and `.gitignore`. | Node.js, `dotenv` | 
 
-## 🏗️ Project Structure
+##  Project Structure
 
 Your project is structured for clear separation of concerns:
 medical-simplifier-nodejs/
@@ -33,7 +33,7 @@ medical-simplifier-nodejs/
 ├── index.js                  # Main Express server and API route definitions
 ├── package.json              # Project dependencies and metadata
 └── README.md                 # This file
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 ### 1. Prerequisites
 
@@ -68,7 +68,7 @@ GROQ_NORMALIZATION_MODEL=mixtral-8x7b-32768
 GROQ_SUMMARY_MODEL=mixtral-8x7b-32768
 
 
-## ▶️ Running the API
+##  Running the API
 
 Start the Express server:
 
@@ -77,7 +77,7 @@ npm start
 
 The server will be running at `http://localhost:3000`.
 
-## 📌 API Usage (Postman Examples)
+##  API Usage (Postman Examples)
 
 All endpoints accept `POST` requests. Set the body type to **raw** and the format to **JSON (application/json)**.
 
@@ -98,6 +98,6 @@ All endpoints accept `POST` requests. Set the body type to **raw** and the forma
 | :--- | :--- | :--- | 
 | **Image Path** | `{"imagePath": "src/data/lab_report_q3_2024.png"}` | Simulates the full workflow by passing the path to the OCR mock. |
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License.
